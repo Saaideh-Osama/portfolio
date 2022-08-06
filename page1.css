@@ -1,0 +1,222 @@
+   .navbar-brand>img {
+       width: 10em;
+       height: 3em;
+   }
+
+   .navbar-nav {
+       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   }
+
+   .page1grid {
+       display: grid;
+       grid-template-rows: 3fr 1fr 3fr;
+       grid-template-columns: 1fr;
+
+       height: 85vh;
+   }
+
+   .topimage {
+       grid-column: 1;
+       grid-row: 1;
+       padding-top: 2vh;
+   }
+
+   .topimage .image div>img {
+       width: 30vw;
+       box-shadow: 6vh 10vw rgb(210, 206, 206);
+       min-height: 20vh;
+   }
+
+   .name {
+       padding-left: 18vw;
+       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   }
+
+   .aboutme {
+       grid-row: 2;
+       margin-top: 50px;
+       background-image: linear-gradient(to bottom right, #dedada, #9a9996);
+   }
+
+   legend {
+       text-align: center;
+       font-weight: 800;
+       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+       text-shadow: 2px 2px gray;
+   }
+
+   .aboutme>p {
+       font-size: 2em;
+       text-align: left;
+       font-family: Georgia, 'Times New Roman', Times, serif;
+       padding: 40px;
+   }
+
+   .skillsandedu {
+       grid-row: 3;
+       background-image: linear-gradient(to bottom right, #dedada, #9a9996);
+       color: rgb(0, 0, 0);
+       font-size: 15px;
+       text-align: left;
+       ;
+       font-family: Georgia, 'Times New Roman', Times, serif;
+       padding: 40px;
+   }
+
+   ul:not(.skills) {
+       list-style-type: circle;
+   }
+
+   .skills {
+       list-style-type: square;
+   }
+
+   .topimage {
+       display: flex;
+       justify-content: space-around;
+   }
+
+   .occupation {
+       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+       font-size: 30px;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       grid-column: 3;
+   }
+
+   .occupation>div {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+
+   .stack {
+       background-color: black;
+       color: darkgray;
+       border-radius: 30%;
+   }
+
+   .image {
+       display: flex;
+       flex-direction: column;
+   }
+
+   .web {
+       color: rgb(0, 0, 0);
+   }
+
+   .developer {
+       color: white;
+       background-color: rgb(0, 0, 0);
+       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   }
+
+   .name {
+       font-size: 15px;
+       text-shadow: 1px 1px rgb(246, 246, 246);
+   }
+
+
+
+   nav {
+       display: flex;
+   }
+
+   .pages>a {
+       display: flex;
+       flex-direction: column;
+       color: white;
+   }
+
+   #footer {
+       background-image: url(https://i.pinimg.com/600x315/b0/2a/e2/b02ae2523a2c395bab1d7828492338bd.jpg);
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       ;
+       text-align: left;
+       padding: 10px 10px;
+       font-family: Georgia, 'Times New Roman', Times, serif;
+   }
+
+   .footerright {
+       justify-content: center;
+       align-items: center;
+       grid-column: 1;
+       grid-row: 1;
+       display: flex;
+       flex-direction: column;
+       padding-left: 25px;
+       padding-top: 25px;
+       padding-bottom: 25px;
+   }
+
+   .footerleft>a {
+       color: rgb(0, 0, 0);
+   }
+
+   .footerright>a {
+       color: rgb(0, 0, 0);
+   }
+
+   .footerleft {
+       padding-left: 25px;
+       padding-top: 25px;
+       padding-bottom: 25px;
+       grid-row: 1;
+       grid-column: 2;
+       display: flex;
+       flex-direction: column;
+   }
+
+   /* ipad media  */
+
+
+   @media screen and (max-width: 900px) and (min-width: 600px) {
+       .pages {
+           display: flex;
+           flex-direction: row;
+       }
+
+       .name {
+           padding-top: 20px;
+           font-size: 18px;
+           text-shadow: 3px 3px rgb(246, 246, 246);
+       }
+
+       .aboutme{
+           margin-top:80px;
+       }
+
+       fieldset {
+           padding-top: 30px;
+           padding-bottom: 30px;
+       }
+
+       .skillsandedu {
+           padding-top: 30px;
+           font-size: 1em;
+       }
+
+       .pages>a {
+           flex-direction: row;
+       }
+
+       .aboutme fieldset>p {
+           font-size: 1em;
+       }
+
+       #footer {
+           font-size: 1em;
+           color: #000000;
+       }
+   }
+
+   /* full-screen media  */
+
+   @media screen and (min-width: 1000px) {
+       .pages {
+           display: flex;
+           flex-direction: row;
+       }
+   }

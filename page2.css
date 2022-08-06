@@ -1,0 +1,262 @@
+.projgrid {
+    display: grid;
+    gap: 5vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10vh 65vh 65vh;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFIrnXG6DvObSzFmJDFex91YzZzNZSBjKvFg&usqp=CAU);
+}
+
+.navbar-brand>img {
+    width: 10em;
+    height: 3em;
+}
+
+.navbar navbar-expand-lg navbar-dark bg-dark {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pages>a {
+    display: flex;
+    flex-direction: column;
+    padding-right: 20vw;
+    color: white;
+}
+
+.heading {
+    grid-row: 1;
+    grid-column: span 3;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    width: 75vw;
+    padding-top: 3vh;
+}
+
+.project1 {
+    grid-row: 2;
+    grid-column: 1;
+    padding-left: 8vw;
+    width: 65vw;
+    height: 60vh;
+}
+
+.project1>div {
+    border: 2px black dashed;
+}
+
+.card-body {
+    text-align: center;
+    background-image: linear-gradient(gray, white);
+    ;
+}
+
+.card-text {
+    font-size: 15px;
+}
+
+.project2 {
+    grid-row: 3;
+    grid-column: 1;
+    padding-left: 8vw;
+    width: 65vw;
+    height: 60vh;
+}
+
+.project2>div {
+    border: 2px black dashed;
+}
+
+.sep {
+    width: 100vw;
+    height: 10vh;
+    background-color: rgb(210, 205, 205);
+}
+
+.taskgrid {
+    display: grid;
+    grid-template: 10vh 60vh 55vh 55vh / 92vw;
+    gap: 10vh;
+    background-image: url(https://previews.123rf.com/images/sanek13744/sanek137441802/sanek13744180200171/95815696-to-do-list-seamless-pattern-background-business-flat-vector-illustration-checklist-task-list-symbol-.jpg);
+}
+
+.task1 {
+    grid-row: 2;
+    grid-column: 1;
+    padding-left: 8vw;
+    width: 65vw;
+    height: 60vh;
+}
+
+.task1>div {
+    border: 2px black dashed;
+}
+
+
+
+.task2 {
+    grid-row: 3;
+    padding-left: 8vw;
+    width: 65vw;
+    height: 60vh;
+}
+
+.task2>div {
+    border: 2px black dashed;
+}
+
+.task3 {
+    grid-row: 4;
+    padding-left: 8vw;
+    width: 65vw;
+    height: 60vh;
+
+}
+
+.task3>div {
+    border: 2px black dashed;
+}
+
+
+#footer {
+    background-image: url(https://i.pinimg.com/600x315/b0/2a/e2/b02ae2523a2c395bab1d7828492338bd.jpg);
+    display: grid;
+    grid-template-columns: 30vw 30vw;
+    ;
+    text-align: left;
+    padding: 10px 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    weight: 13vh;
+}
+
+.footerright {
+    justify-content: center;
+    align-items: center;
+    grid-column: 1;
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    padding-left: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    
+}
+
+.footerleft>a {
+    color: rgb(0, 0, 0);    font-size: 10px;
+}
+
+.footerright>a {
+    color: rgb(0, 0, 0);font-size: 10px;
+}
+
+.footerleft {
+    padding-left: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    grid-row: 1;
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* ipad media  */
+@media screen and (max-width: 900px) and (min-width: 600px) {
+    .taskgrid {
+        gap: 5vh;
+    }
+
+    .footerleft>a {
+        color: rgb(0, 0, 0);
+        padding-top: 2vh; font-size: 20px;
+    }
+
+    .footerright>a {
+        color: rgb(0, 0, 0);
+        padding-top: 2vh; font-size: 20px;
+    }
+
+    .projgrid {
+        gap: 5vh;
+        grid-template-rows: 10vh 55vh 55vh;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .pages {
+        display: flex;
+        flex-direction: row;
+        font-size: 25px;
+    }
+
+    .projgrid {
+        display: grid;
+        gap: 5vh;
+        grid-template-columns: 40vw 40vw;
+        grid-template-rows: 10vh 85vh;
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFIrnXG6DvObSzFmJDFex91YzZzNZSBjKvFg&usqp=CAU);
+    }
+
+    .project1 {
+        grid-row: 2;
+        grid-column: 1;
+        padding-left: vw;
+        width: 40 vw;
+        height: 45vh;
+    }
+
+    .project2 {
+        grid-row: 2;
+        grid-column: 2;
+        width: 45vw;
+        height: 45vh;
+    }
+
+    .card {
+        width: 40vw;
+        height: 85vh;
+    }
+
+    .sep {
+        width: 100vw;
+        height: 10vh;
+        background-color: rgb(210, 205, 205);
+    }
+    .taskgrid {
+        display: grid;
+        grid-template: 10vh 90vh 90vh /30vw 15vw 30vw;
+    
+    }
+    .task1 {
+        grid-row: 2;
+        grid-column: 1;
+        width: 85vw;
+        height: 60vh;
+    }
+        
+    
+    .task2 {
+        grid-row: 2;
+        grid-column: 3;
+        padding-left: 0vh;
+        gap: 0vh;
+        width: 90vw;
+        height: 60vh;
+    }
+        
+    .task3 {
+        grid-row: 3;
+        grid-column:2 ;
+        padding-left: 0vw;
+        width: 85vw;
+        height: 60vh;
+    }
+    .footerright>a {
+    font-size: 40px; padding-left: 2vw;
+    }
+    .footerleft>a {
+        font-size: 40px;padding-left: 2vw;
+    }
+
+}

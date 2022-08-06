@@ -1,0 +1,224 @@
+.navbar-brand>img {
+    width: 10em;
+    height: 3em;
+}
+
+.navbar navbar-expand-lg navbar-dark bg-dark {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pages>a {
+    display: flex;
+    flex-direction: column;
+    padding-right: 20vw;
+    color: white;
+}
+
+.page3grid {
+    display: grid;
+    grid-template: 7vh 30vh 30vh / 3vw 45vw 3vw 45vw 3vw;
+    row-gap: 5vh;
+}
+
+.heading {
+    grid-column: span 5;
+    text-align: center;
+    grid-row: 1;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.contactcard1 {
+    border: inset gray;
+    grid-column: 2;
+    grid-row: 2;
+    text-align: center;
+}
+
+.contactcard1 a>img {
+    border-radius: 50%;
+    width: 43vw;
+    height: 25vh;
+}
+
+.contactcard2 {
+    border: inset gray;
+    grid-column: 4;
+    grid-row: 2;
+    text-align: center;
+}
+
+.contactcard2 a>img {
+    border-radius: 50%;
+    width: 43vw;
+    height: 27vh;
+}
+
+.contactcard3 {
+    border: inset gray;
+    grid-column: 2;
+    grid-row: 3;
+    text-align: center;
+}
+
+.contactcard3 a>img {
+    border-radius: 50%;
+    width: 43vw;
+    height: 25vh;
+}
+
+.contactcard4 {
+    border: inset gray;
+    grid-column: 4;
+    grid-row: 3;
+    text-align: center;
+}
+
+.contactcard4 a>img {
+    border-radius: 50%;
+    width: 43vw;
+    height: 25vh;
+}
+
+form {background-image: url(istockphoto-1403848173-612x612.jpg);
+    display: flex;
+    flex-direction: column;
+    ;
+    align-items: center;
+    margin-top: 7vh;
+}
+
+form div input {
+    border: 1px dotted gray;
+    margin-top: 5vh;
+}
+
+form div {
+    margin-top: 3vh;
+}
+
+.form-heading {
+    font-size: 1.5em;
+    font-family: fantasy;
+}
+#footer {
+    background-image: url(https://i.pinimg.com/600x315/b0/2a/e2/b02ae2523a2c395bab1d7828492338bd.jpg);
+    display: grid;
+    grid-template-columns: 30vw 30vw;
+    ;
+    text-align: left;
+    padding: 10px 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    weight: 13vh;
+}
+
+.footerright {
+    justify-content: center;
+    align-items: center;
+    grid-column: 1;
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    padding-left: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    
+}
+
+.footerleft>a {
+    color: rgb(0, 0, 0);    font-size: 10px;
+}
+
+.footerright>a {
+    color: rgb(0, 0, 0);font-size: 10px;
+}
+
+.footerleft {
+    padding-left: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    grid-row: 1;
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+@media screen and (min-width: 1000px) { 
+
+    .pages {
+        display: flex;
+        flex-direction: row;
+    }
+    .page3grid {
+        display: grid;
+        grid-template: 7vh 50vh 50vh / 3vw 45vw 3vw 45vw 3vw;
+        row-gap: 5vh;
+    }
+    .contactcard1 {
+        border: inset gray;
+        grid-column: 2;
+        grid-row: 2;
+        text-align: center;
+        font-size: 25px;
+    }
+    
+    .contactcard1 a>img {
+        border-radius: 50%;
+        width: 43vw;
+        height: 45vh;
+    }
+    
+    .contactcard2 {
+        border: inset gray;
+        grid-column: 4;
+        grid-row: 2;
+        text-align: center;
+        font-size: 25px;
+    }
+    
+    .contactcard2 a>img {
+        border-radius: 50%;
+        width: 43vw;
+        height: 45vh;
+    }
+    
+    .contactcard3 {
+        border: inset gray;
+        grid-column: 2;
+        grid-row: 3;
+        text-align: center;
+        font-size: 25px;
+    }
+    
+    .contactcard3 a>img {
+        border-radius: 50%;
+        width: 43vw;
+        height: 45vh;
+    }
+    
+    .contactcard4 {
+        border: inset gray;
+        grid-column: 4;
+        grid-row: 3;
+        text-align: center;
+        font-size: 25px;
+    }
+    
+    .contactcard4 a>img {
+        border-radius: 50%;
+        width: 43vw;
+        height: 45vh;
+    }
+    .footerleft>a {
+        color: rgb(0, 0, 0);    font-size: 25px;
+    }
+    
+    .footerright>a {
+        color: rgb(0, 0, 0);font-size: 25px;
+    }
+    form{font-size: 25px;}
+} 
